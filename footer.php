@@ -218,6 +218,11 @@
     </div>
 </footer>
 
-<?php wp_footer(); ?>
+<?php 
+// Slide-Over Cart Drawer
+get_template_part( 'template-parts/cart-drawer' ); 
+
+wp_footer(); 
+?>
 </body>
 </html>

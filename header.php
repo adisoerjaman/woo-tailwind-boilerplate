@@ -113,13 +113,14 @@
                     </svg>
                 </a>
 
-                <!-- Dynamic WooCommerce Cart Button -->
+                <!-- Dynamic WooCommerce Cart Button (Opens Slide-Over Drawer) -->
                 <a 
                     id="header-cart-btn"
                     href="<?php echo esc_url( boilerplate_get_cart_url() ); ?>" 
-                    class="relative inline-flex items-center gap-2 px-3 py-2 rounded-btn bg-surface-hover/70 hover:bg-secondary border border-border text-text-main transition-all duration-150 group" 
+                    class="relative inline-flex items-center gap-2 px-3 py-2 rounded-btn bg-surface-hover/70 hover:bg-secondary border border-border text-text-main transition-all duration-150 group cursor-pointer" 
                     title="<?php esc_attr_e( 'Winkelmand bekijken', 'woo-tailwind' ); ?>"
                     aria-label="<?php esc_attr_e( 'Winkelmand met artikelen', 'woo-tailwind' ); ?>"
+                    data-cart-drawer-trigger="true"
                 >
                     <div class="relative flex items-center justify-center">
                         <svg class="w-5 h-5 text-text-main group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
@@ -180,8 +181,8 @@
             <a href="<?php echo esc_url( boilerplate_get_account_url() ); ?>" class="btn btn-secondary btn-sm flex-1 text-center">
                 <?php esc_html_e( 'Mijn Account', 'woo-tailwind' ); ?>
             </a>
-            <a href="<?php echo esc_url( boilerplate_get_cart_url() ); ?>" class="btn btn-primary btn-sm flex-1 text-center">
-                <?php esc_html_e( 'Naar Winkelmand', 'woo-tailwind' ); ?>
+            <a href="<?php echo esc_url( boilerplate_get_cart_url() ); ?>" class="btn btn-primary btn-sm flex-1 text-center cursor-pointer" data-cart-drawer-trigger="true">
+                <?php esc_html_e( 'Winkelmand Openen', 'woo-tailwind' ); ?>
             </a>
         </div>
     </div>
