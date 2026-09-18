@@ -1,6 +1,6 @@
 # WooCommerce + Tailwind CSS v4 + Vite Boilerplate
 
-Welkom bij de **WooCommerce Tailwind Boilerplate**! Dit starter-thema is speciaal ontworpen om snel, modulair en met moderne frontend tools een professionele WooCommerce webshop te bouwen.
+Dit is een **WooCommerce Tailwind Boilerplate door Adisign** en is gemaakt om snel, en met TailwindCSS een professionele WooCommerce webshop te bouwen.
 
 Geen logge standaard WordPress templates of verouderde styling meer: je hebt volledige controle met **Tailwind CSS v4**, **Vite** (Hot Module Replacement) en configureerbare **Design Tokens**.
 
