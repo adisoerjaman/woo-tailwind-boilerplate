@@ -50,22 +50,12 @@
                 <!-- Brand Logo / Title -->
                 <div class="flex items-center">
                     <?php if ( has_custom_logo() ) : ?>
-                        <div class="site-logo">
+                        <div class="site-logo flex items-center">
                             <?php the_custom_logo(); ?>
                         </div>
                     <?php else : ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex items-center gap-2.5 group">
-                            <div class="w-9 h-9 rounded-btn bg-primary text-primary-text flex items-center justify-center font-bold text-base shadow-xs group-hover:scale-105 transition-transform">
-                                <span>W</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="font-extrabold text-lg lg:text-xl tracking-tight text-text-main font-heading leading-none">
-                                    <?php bloginfo( 'name' ); ?>
-                                </span>
-                                <span class="text-[10px] uppercase font-bold tracking-widest text-accent mt-0.5">
-                                    <?php esc_html_e( 'WooCommerce', 'woo-tailwind' ); ?>
-                                </span>
-                            </div>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="font-extrabold text-xl lg:text-2xl tracking-tight text-text-main font-heading hover:opacity-90 transition-opacity">
+                            <?php bloginfo( 'name' ); ?>
                         </a>
                     <?php endif; ?>
                 </div>

@@ -72,14 +72,15 @@
             
             <!-- Column 1: Brand Bio & Socials (Col span 2) -->
             <div class="lg:col-span-2 space-y-4">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-flex items-center gap-2">
-                    <div class="w-8 h-8 rounded-btn bg-primary text-primary-text flex items-center justify-center font-bold text-sm shadow-xs">
-                        <span>W</span>
+                <?php if ( has_custom_logo() ) : ?>
+                    <div class="site-logo footer-logo flex items-center max-w-[200px]">
+                        <?php the_custom_logo(); ?>
                     </div>
-                    <span class="font-extrabold text-xl tracking-tight text-text-main font-heading">
+                <?php else : ?>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block font-extrabold text-xl tracking-tight text-text-main font-heading hover:opacity-90 transition-opacity">
                         <?php bloginfo( 'name' ); ?>
-                    </span>
-                </a>
+                    </a>
+                <?php endif; ?>
                 
                 <p class="text-sm text-text-muted leading-relaxed max-w-sm">
                     <?php 

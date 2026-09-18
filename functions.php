@@ -9,6 +9,7 @@
 require_once get_template_directory() . '/inc/vite.php';
 require_once get_template_directory() . '/inc/woocommerce.php';
 require_once get_template_directory() . '/inc/navigation.php';
+require_once get_template_directory() . '/inc/customizer.php';
 
 /**
  * 2. Basis thema features, menu's & WooCommerce support aanzetten
